@@ -23,24 +23,40 @@ body {
 
 
 section {
-
-	height: 100vh;
-	text-align: center;
-	padding: 2vw;
-
-	
+  height: 100vh;
+  text-align: center;
+  padding: 2vw;
 }
 
 section {
-
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	background-position: bottom;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: bottom;
 }
 
 section:nth-of-type(odd) {
@@ -61,21 +77,45 @@ section h1 {
 	padding: 0;
 }
 
-#top h1 {
+.happy {
+  width: 100vw;
+  display: block;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  font-size: 14vw;
+  font-weight: 700;
+  background: rgba(0,0,0, 0.9);
+  color: #fff;
+  opacity: 1;
+  margin: 0;
+  height: 100vh;
+  padding-top: 35vh;
+  -webkit-mix-blend-mode: darken;
+  -moz-mix-blend-mode: darken;
+  -ms-mix-blend-mode: darken;
+  -o-mix-blend-mode: darken;
+  mix-blend-mode: darken;
+}
 
-	width:100vw;
-	display: block;
-	letter-spacing: .2em;
-	text-transform: uppercase;
-	font-size: 14vw;
-	font-weight: 700;
-	background: rgba(0,0,0, 0.9);
-	color: #fff;
-	margin: 0;
-	height: 100vh;
-	padding-top: 35vh;
-	mix-blend-mode: darken;
 
+@-webkit-keyframes happy { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes happy { from { opacity:0; } to { opacity:1; } }
+@keyframes happy { from { opacity:0; } to { opacity:1; } }
+
+
+.happy {
+	opacity:0;  /* make things invisible upon start */
+	-webkit-animation:happy ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:happy ease-in 1;
+	animation:happy ease-in 1;
+
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
 }
 
 #text p {
@@ -88,61 +128,76 @@ section h1 {
 }
 
 
-
 .chick {
-
-
-	background-image: url('../images/park_bench.jpg');
-
-	background-position: center;
+  background-image: url('../images/park_bench.jpg');
+  background-position: center;
 }
 
 .read {
-
-	background: linear-gradient(to top,#111,transparent),
+  background: -webkit-linear-gradient(to top,#111,transparent),
 					url('../images/jessica.jpg');
-	background-position: top;
-	background-size: cover;
+  background: -moz-linear-gradient(to top,#111,transparent),
+					url('../images/jessica.jpg');
+  background: -ms-linear-gradient(to top,#111,transparent),
+					url('../images/jessica.jpg');
+  background: -o-linear-gradient(to top,#111,transparent),
+					url('../images/jessica.jpg');
+  background: linear-gradient(to top,#111,transparent),
+					url('../images/jessica.jpg');
+  background-position: top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .climb {
-
-	background-image: url('../images/pembroke.jpg');
-	background-position: left;
+  background-image: url('../images/pembroke.jpg');
+  background-position: left;
 }
 
 .footprints {
-
-	background-image: url('../images/footprints.jpg');
+  background-image: url('../images/footprints.jpg');
 }
 
 .taught {
-
-	background-image: url('../images/humble.jpg');
-	background-position: top;
+  background-image: url('../images/humble.jpg');
+  background-position: top;
 }
 
 .love {
-
-	background-image: url('../images/tokachidake.jpg');
+  background-image: url('../images/tokachidake.jpg');
 }
 
-
-
 .heart:before {
-
-	content: "\e9da";
-	font-family: 'icomoon';
-	color: #fff;
-	font-size: 30px;
-	display: block;
-	text-decoration: none;
-	margin-top: 50px;
-	margin-bottom: 10px;
-
-	transition: .5s ease-out;
-	transition-delay: .5s;
-	opacity: 1;
+  content: "\e9da";
+  font-family: 'icomoon';
+  color: #fff;
+  font-size: 30px;
+  display: block;
+  -webkit-text-decoration: none;
+  -moz-text-decoration: none;
+  -ms-text-decoration: none;
+  -o-text-decoration: none;
+  text-decoration: none;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  -webkit-transition: .5s ease-out;
+  -moz-transition: .5s ease-out;
+  -ms-transition: .5s ease-out;
+  -o-transition: .5s ease-out;
+  transition: .5s ease-out;
+  -webkit-transition-delay: .5s;
+  -moz-transition-delay: .5s;
+  -ms-transition-delay: .5s;
+  -o-transition-delay: .5s;
+  transition-delay: .5s;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  -ms-opacity: 1;
+  -o-opacity: 1;
+  opacity: 1;
 }
 
 .love a {
@@ -154,11 +209,12 @@ section h1 {
 }
 
 .love:hover .heart:before {
-
-	transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
-
-
 
 .love:hover a {
 
@@ -188,15 +244,25 @@ section h1 {
 @media screen and (min-width: 845px) {
 
 	#top {
-
-	background: linear-gradient(to right,#fff -20%, transparent 60%),
+  background: -webkit-linear-gradient(to right,#fff -35%, transparent 60%),
 					url('../images/chamonix.jpg');
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	background-position: bottom;
-
-	}
+  background: -moz-linear-gradient(to right,#fff -35%, transparent 60%),
+					url('../images/chamonix.jpg');
+  background: -ms-linear-gradient(to right,#fff -35%, transparent 60%),
+					url('../images/chamonix.jpg');
+  background: -o-linear-gradient(to right,#fff -35%, transparent 60%),
+					url('../images/chamonix.jpg');
+  background: linear-gradient(to right,#fff -35%, transparent 60%),
+					url('../images/chamonix.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: bottom;
+}
 
 	section h1 {
 
