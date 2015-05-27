@@ -52,7 +52,7 @@ section {
   -o-align-items: center;
   align-items: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
@@ -163,7 +163,7 @@ section h1 {
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
 
 
 
@@ -184,10 +184,8 @@ section h1 {
 }
 
 .love {
-  background-image: url('../images/tokachidake_ipad.jpg');
-  -webkit-background-size: cover;
-  background-attachment: scroll;
-  background-position: center center;
+  background-image: url('../images/tokachidake.jpg');
+  
 }
 
 .heart:before {
