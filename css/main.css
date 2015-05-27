@@ -184,7 +184,10 @@ section h1 {
 }
 
 .love {
-  background-image: url('../images/tokachidake.jpg');
+  background-image: url('../images/tokachidake_ipad.jpg');
+  -webkit-background-size: cover;
+  background-attachment: scroll;
+  background-position: center center;
 }
 
 .heart:before {
