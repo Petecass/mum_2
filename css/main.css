@@ -18,7 +18,9 @@ body {
 
 	margin: 0;
 	padding: 0;
-	font-family: 'Montserrat', sans-serif;		
+	font-family: 'Montserrat', sans-serif;	
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;	
 }
 
 
@@ -145,17 +147,15 @@ section h1 {
   background: linear-gradient(to top,#111,transparent),
 					url('../images/jessica.jpg');
   background-position: top;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -ms-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  
 }
 
 .climb,
 .footprints,
 .taught,
-.love, {
+.love,
+.read,
+.chick {
 
 	-webkit-background-size: cover;
   -moz-background-size: cover;
@@ -168,9 +168,6 @@ section h1 {
 
 }
 
-
-
-
 .climb {
   background-image: url('../images/pembroke.jpg');
   background-position: left;
@@ -182,7 +179,7 @@ section h1 {
 
 .taught {
   background-image: url('../images/humble.jpg');
-  background-position: top;
+  
 }
 
 .love {
@@ -238,7 +235,7 @@ section h1 {
 .love:hover a {
 
 	
-	opacity: .1;
+	opacity: .5;
 
 }
 
