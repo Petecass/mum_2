@@ -105,17 +105,17 @@ section h1 {
 
 .happy {
 	opacity:0;  /* make things invisible upon start */
-	-webkit-animation:happy ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-	-moz-animation:happy ease-in 1;
-	animation:happy ease-in 1;
+	-webkit-animation:happy ease-out 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:happy ease-out 1;
+	animation:happy ease-out 1;
 
 	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
 	-moz-animation-fill-mode:forwards;
 	animation-fill-mode:forwards;
 
-	-webkit-animation-duration:1s;
-	-moz-animation-duration:1s;
-	animation-duration:1s;
+	-webkit-animation-duration:3s;
+	-moz-animation-duration:3s;
+	animation-duration:3s;
 }
 
 #text p {
@@ -151,6 +151,25 @@ section h1 {
   -o-background-size: cover;
   background-size: cover;
 }
+
+.climb,
+.footprints,
+.taught,
+.love, {
+
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+
+}
+
+
+
 
 .climb {
   background-image: url('../images/pembroke.jpg');
