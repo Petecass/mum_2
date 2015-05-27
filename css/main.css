@@ -52,7 +52,6 @@ section {
   -o-align-items: center;
   align-items: center;
   background-repeat: no-repeat;
-  /*background-attachment: fixed;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
@@ -163,7 +162,7 @@ section h1 {
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  /*background-attachment: fixed;*/
+  
 
 
 
@@ -273,7 +272,7 @@ section h1 {
   background: linear-gradient(to right,#fff -85%, transparent 60%),
 					url('../images/chamonix.jpg');
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
@@ -289,11 +288,15 @@ section h1 {
 	}
 }
 
+@media screen and (min-width: 1200px) {
+
+	section {
+
+		background-attachment: fixed !important;
+	}
 
 
-
-
-
+}
 
 
 
