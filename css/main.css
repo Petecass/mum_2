@@ -25,9 +25,9 @@ body {
 
 
 section {
-  height: 600px;
+  height: 100vh;
   text-align: center;
-  padding: 20px;
+  padding: 2vh;
 }
 
 section {
@@ -80,7 +80,7 @@ section h1 {
 }
 
 .happy {
-  width: 100%;
+  width: 100vw;
   display: block;
   letter-spacing: .2em;
   text-transform: uppercase;
@@ -90,7 +90,7 @@ section h1 {
   color: #fff;
   opacity: 1;
   margin: 0;
-  height: 600px;
+  height: 100vh;
   padding-top: 35vh;
   -webkit-mix-blend-mode: darken;
   -moz-mix-blend-mode: darken;
