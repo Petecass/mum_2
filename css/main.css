@@ -166,6 +166,7 @@ section h1 {
   background-attachment: fixed;
 
 
+
 }
 
 .climb {
@@ -260,15 +261,15 @@ section h1 {
 @media screen and (min-width: 845px) {
 
 	#top {
-  background: -webkit-linear-gradient(to right,#fff -35%, transparent 60%),
+  background: -webkit-linear-gradient(to right,#fff -80%, transparent 60%),
 					url('../images/chamonix.jpg');
-  background: -moz-linear-gradient(to right,#fff -35%, transparent 60%),
+  background: -moz-linear-gradient(to right,#fff -80%, transparent 60%),
 					url('../images/chamonix.jpg');
-  background: -ms-linear-gradient(to right,#fff -35%, transparent 60%),
+  background: -ms-linear-gradient(to right,#fff -80%, transparent 60%),
 					url('../images/chamonix.jpg');
-  background: -o-linear-gradient(to right,#fff -35%, transparent 60%),
+  background: -o-linear-gradient(to right,#fff -80%, transparent 60%),
 					url('../images/chamonix.jpg');
-  background: linear-gradient(to right,#fff -35%, transparent 60%),
+  background: linear-gradient(to right,#fff -80%, transparent 60%),
 					url('../images/chamonix.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
