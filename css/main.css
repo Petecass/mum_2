@@ -25,9 +25,9 @@ body {
 
 
 section {
-  height: 100vh;
+  height: 600px;
   text-align: center;
-  padding: 2vw;
+  padding: 20px;
 }
 
 section {
@@ -80,7 +80,7 @@ section h1 {
 }
 
 .happy {
-  width: 100vw;
+  width: 100%;
   display: block;
   letter-spacing: .2em;
   text-transform: uppercase;
@@ -90,7 +90,7 @@ section h1 {
   color: #fff;
   opacity: 1;
   margin: 0;
-  height: 100vh;
+  height: 600px;
   padding-top: 35vh;
   -webkit-mix-blend-mode: darken;
   -moz-mix-blend-mode: darken;
@@ -115,9 +115,9 @@ section h1 {
 	-moz-animation-fill-mode:forwards;
 	animation-fill-mode:forwards;
 
-	-webkit-animation-duration:3s;
-	-moz-animation-duration:3s;
-	animation-duration:3s;
+	-webkit-animation-duration:5s;
+	-moz-animation-duration:5s;
+	animation-duration:5s;
 }
 
 #text p {
@@ -261,15 +261,15 @@ section h1 {
 @media screen and (min-width: 845px) {
 
 	#top {
-  background: -webkit-linear-gradient(to right,#fff -80%, transparent 60%),
+  background: -webkit-linear-gradient(to right,#fff -85%, transparent 60%),
 					url('../images/chamonix.jpg');
-  background: -moz-linear-gradient(to right,#fff -80%, transparent 60%),
+  background: -moz-linear-gradient(to right,#fff -85%, transparent 60%),
 					url('../images/chamonix.jpg');
-  background: -ms-linear-gradient(to right,#fff -80%, transparent 60%),
+  background: -ms-linear-gradient(to right,#fff -85%, transparent 60%),
 					url('../images/chamonix.jpg');
-  background: -o-linear-gradient(to right,#fff -80%, transparent 60%),
+  background: -o-linear-gradient(to right,#fff -85%, transparent 60%),
 					url('../images/chamonix.jpg');
-  background: linear-gradient(to right,#fff -80%, transparent 60%),
+  background: linear-gradient(to right,#fff -85%, transparent 60%),
 					url('../images/chamonix.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
